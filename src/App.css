@@ -284,11 +284,10 @@ h6 {
 }
 
 .header .branding {
-	background-color: var(--background-color);
+	background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.7) 50%, #000);
 	min-height: 60px;
 	padding: 10px 0;
 	transition: 0.3s;
-	border-bottom: 1px solid var(--background-color);
 }
 
 .header .logo {
@@ -301,9 +300,9 @@ h6 {
 }
 
 .header .logo h1 {
-	font-size: 30px;
+	font-size: 25px;
 	margin: 0;
-	font-weight: 700;
+	font-weight: 600;
 	color: var(--heading-color);
 }
 
@@ -366,7 +365,7 @@ h6 {
 	.navmenu a:focus {
 		color: var(--nav-color);
 		padding: 18px 15px;
-		font-size: 14px;
+		font-size: 16px;
 		font-family: var(--nav-font);
 		font-weight: 400;
 		display: flex;
@@ -935,7 +934,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
 	width: 100%;
-	min-height: 85vh;
+	min-height: 100vh;
 	position: relative;
 	padding: 80px 0;
 	display: flex;
@@ -956,7 +955,7 @@ section,
 
 .hero:before {
 	content: "";
-	background: #000000a0;
+	/*background: #000000a0;*/
 	position: absolute;
 	inset: 0;
 	z-index: 2;
@@ -1758,4 +1757,28 @@ section,
 
 .margin-right-13 {
 	margin-right: 13px !important;
+}
+
+.scroll-down {
+	position: absolute;
+	bottom: 50px;
+	color: white;
+	text-transform: uppercase;
+	animation: pulse 2s infinite;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1.2rem;
+	letter-spacing: 0.05em;
+	font-weight: 500;
+}
+
+@keyframes pulse {
+	0%,
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	50% {
+		opacity: 0.5;
+		transform: translateY(10px);
+	}
 }

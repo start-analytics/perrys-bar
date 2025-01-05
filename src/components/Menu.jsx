@@ -1,7 +1,7 @@
 import ImageGallery from "./ImageGallery";
-import img1 from "../assets/img/img1.png";
-import img2 from "../assets/img/img2.jpg";
-import img3 from "../assets/img/img3.jpg";
+import shisha from "../assets/img/shisha.jpg";
+import dj from "../assets/img/dj.jpg";
+import cocktailPic from "../assets/img/cocktail.jpg";
 import img4 from "../assets/img/img4.jpg";
 import alf_logo from "../assets/img/alf_logo.png";
 import crab from "../assets/img/menu/lobster-bisque.jpg";
@@ -13,7 +13,15 @@ import MenuItem from "./MenuItem";
 const Menu = () => {
 	return (
 		<section id="menu" className="menu section">
-			<div className="section-title pb-0 mb-5">
+			<div className="container-fluid ">
+				<div className="row g-0">
+					<ImageGallery url={shisha} />
+					<ImageGallery url={cocktailPic} />
+					<ImageGallery url={dj} />
+					<ImageGallery url={shisha} />
+				</div>
+			</div>
+			<div className="section-title pb-0 mb-5 mt-5">
 				<h2 className="d-flex align-items-center justify-content-center">menu</h2>
 			</div>
 			<div className="container isotope-layout" data-default-filter=".filter-shisha" data-layout="masonry" data-sort="original-order">
@@ -51,14 +59,6 @@ const Menu = () => {
 					<MenuItem url={crab} title="Garlic Bread" price="$8" description="Warm baguette slices infused with garlic butter." filter="filter-snacks" />
 					<MenuItem url={crab} title="Stuffed Mushrooms" price="$11" description="Mushrooms filled with creamy cheese and herbs, baked to perfection." filter="filter-snacks" />
 					<MenuItem url={crab} title="Onion Rings" price="$9" description="Crispy golden onion rings served with a tangy dipping sauce." filter="filter-snacks" />
-				</div>
-			</div>
-			<div className="container-fluid mt-5">
-				<div className="row g-0">
-					<ImageGallery url={img1} />
-					<ImageGallery url={img2} />
-					<ImageGallery url={img3} />
-					<ImageGallery url={img4} />
 				</div>
 			</div>
 		</section>

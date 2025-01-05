@@ -7,8 +7,7 @@ const Header = () => {
 				<div className="container position-relative d-flex align-items-center justify-content-between">
 					<a href="index.html" className="logo d-flex align-items-center me-auto me-xl-0">
 						<div className="d-flex">
-							<img src={logo} style={{ borderRadius: "50%" }} className="margin-right-13" alt="logo" />
-							<h1 className="sitename">SLS Shisha</h1>
+							<h1 className="sitename">Perry's Shibuya</h1>
 						</div>
 					</a>
 					<nav id="navmenu" className="navmenu">
