@@ -3,7 +3,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Menu from "./components/Menu/Menu";
 import Access from "./components/Access";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import { initializeScripts } from "./assets/js/main";
 import "./App.css";
 
