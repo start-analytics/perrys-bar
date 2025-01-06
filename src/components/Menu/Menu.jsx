@@ -1,4 +1,4 @@
-import ImageGallery from "../Gallery/Gallery";
+import Gallery from "../Gallery/Gallery";
 import img1 from "../../assets/img/img1.png";
 import img2 from "../../assets/img/img2.jpg";
 import img3 from "../../assets/img/img3.jpg";
@@ -153,10 +153,10 @@ const Menu = () => {
       </div>
       <div className="container-fluid mt-5">
         <div className="row g-0">
-          <ImageGallery url={img1} />
-          <ImageGallery url={img2} />
-          <ImageGallery url={img3} />
-          <ImageGallery url={img4} />
+          <Gallery url={img1} />
+          <Gallery url={img2} />
+          <Gallery url={img3} />
+          <Gallery url={img4} />
         </div>
       </div>
     </section>
