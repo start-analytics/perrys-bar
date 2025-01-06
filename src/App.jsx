@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
-import Menu from "./components/Menu";
+import Menu from "./components/Menu/Menu";
 import Access from "./components/Access";
 import Footer from "./components/Footer";
 import { initializeScripts } from "./assets/js/main";

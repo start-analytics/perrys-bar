@@ -1,13 +1,14 @@
-import ImageGallery from "./ImageGallery";
-import img1 from "../assets/img/img1.png";
-import img2 from "../assets/img/img2.jpg";
-import img3 from "../assets/img/img3.jpg";
-import img4 from "../assets/img/img4.jpg";
-import alf_logo from "../assets/img/alf_logo.png";
-import crab from "../assets/img/menu/lobster-bisque.jpg";
-import hookah from "../assets/img/hookah.png";
-import cocktail from "../assets/img/cocktail.png";
-import fastFood from "../assets/img/fast-food.png";
+import ImageGallery from "../ImageGallery";
+import img1 from "../../assets/img/img1.png";
+import img2 from "../../assets/img/img2.jpg";
+import img3 from "../../assets/img/img3.jpg";
+import img4 from "../../assets/img/img4.jpg";
+import alf_logo from "../../assets/img/alf_logo.png";
+import crab from "../../assets/img/menu/lobster-bisque.jpg";
+import hookah from "../../assets/img/hookah.png";
+import cocktail from "../../assets/img/cocktail.png";
+import fastFood from "../../assets/img/fast-food.png";
+import "./menu.css";
 
 import MenuItem from "./MenuItem";
 const Menu = () => {
