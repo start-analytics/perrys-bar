@@ -5,6 +5,7 @@ import Menu from "./components/Menu/Menu";
 import Access from "./components/Access/Access";
 import Footer from "./components/Footer/Footer";
 import { initializeScripts } from "./assets/js/main";
+import Slider from "./components/Slider/Slider";
 import "./App.css";
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
     <>
       <Header />
       <Hero />
-      <Menu />
+      <Slider />
+      {/* <Menu /> */}
       <Access />
       <Footer />
       <div id="preloader"></div>

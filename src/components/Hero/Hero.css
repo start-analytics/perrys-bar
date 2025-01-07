@@ -9,16 +9,20 @@
   color: var(--default-color);
 }
 
-.hero img {
+/* Video background */
+.hero-video {
   position: absolute;
   inset: 0;
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  filter: brightness(
+    50%
+  ); /* Mund ta përdorësh për të errësuar videon dhe për të krijuar më shumë kontrast */
 }
 
+/* Gradient për të siguruar që video të duket më pak e dukshme dhe të përmirësojmë lexueshmërinë e tekstit */
 .hero:before {
   content: "";
   background: #000000a0;
@@ -27,11 +31,13 @@
   z-index: 2;
 }
 
+/* Konteineri për tekstin dhe butonat */
 .hero .container {
   position: relative;
   z-index: 3;
 }
 
+/* Stili i tekstit */
 .hero .content-wrapper {
   display: flex;
   flex-direction: column;
