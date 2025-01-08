@@ -61,7 +61,7 @@ export default function Slider() {
   const [state, dispatch] = useReducer(slidesReducer, initialState);
 
   return (
-    <div className="slider-container">
+    <div className="slider-container" id="discover">
       <div className="slides">
         <button onClick={() => dispatch({ type: "PREV" })}>‹</button>
         {[...slides, ...slides, ...slides].map((slide, i) => {

@@ -1,5 +1,6 @@
-import "./hero.css";
+import "./Hero.css";
 import smokeVideo from "../../assets/img/smoke.mp4";
+import logo from "../../assets/img/red-white-logo.png";
 
 const Hero = () => {
   return (
@@ -14,15 +15,13 @@ const Hero = () => {
             className="d-flex flex-column align-items-center align-items-lg-center"
             style={{ textAlign: "center" }}
           >
-            <h2
-              style={{ textShadow: "0 2px 9px rgb(255 255 255 / 65%)" }}
-              className="main-title"
-            >
-              Welcome to <span>SLS Shisha</span>
-            </h2>
-            <p style={{ textShadow: "0 2px 9px rgb(255 255 255 / 65%)" }}>
-              Smoke the best shisha in Japan!
-            </p>
+              <h2 className="main-title">
+                  <img
+                      src={logo}
+                      alt="Perrys Bar Logo"
+                      style={{maxWidth: "100%", height: "auto"}} // Adjust size
+                  />
+              </h2>
           </div>
         </div>
       </div>
