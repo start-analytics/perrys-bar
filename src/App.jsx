@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import { initializeScripts } from "./assets/js/main";
 import Slider from "./components/Slider/Slider";
 import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom"; // Import routing components
 
 function App() {
   useEffect(() => {
@@ -18,17 +19,28 @@ function App() {
   }, []);
 
   return (
-    <>
-      <Header />
-      <Hero />
-      <Slider />
-      {/* <Menu /> */}
-      <Access />
-      <Footer />
-      <div id="preloader"></div>
-      {/* Preloader */}
-    </>
+      <>
+          <BrowserRouter>
+              <Header/>
+              <Routes> {/* Define routes */}
+                  <Route path="" element={<Page/>}/>
+                  <Route path="/menu" element={<Menu/>}/> {/* Route for Menu page */}
+              </Routes>
+
+              {/* Preloader */}
+          </BrowserRouter>
+          <div id="preloader"></div>
+      </>
   );
+}
+
+function Page() {
+    return (<>
+        <Hero/>
+        <Slider />
+        <Access />
+        <Footer />
+    </>)
 }
 
 export default App;

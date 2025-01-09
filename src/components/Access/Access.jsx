@@ -42,8 +42,8 @@ const Access = () => {
                     <i className="bi bi-telephone flex-shrink-0" />
                     <div>
                       <h3>Call Us</h3>
-                      <a className="contact-link" href="tel:+81444225800">
-                        +81 44-422-5800
+                      <a className="contact-link" href="tel:+815088830886">
+                        +81 50-8883-0886
                       </a>
                     </div>
                   </div>
@@ -51,7 +51,7 @@ const Access = () => {
                     <i className="bi bi-envelope flex-shrink-0" />
                     <div>
                       <h3>Email Us</h3>
-                      <p>info@example.com</p>
+                      <p>perrys.shibuya@gmail.com</p>
                     </div>
                   </div>
                 </div>
@@ -60,16 +60,16 @@ const Access = () => {
                 <div>
                   <h2 className="open-hours-title">Open Hours</h2>
                   <p>
-                    <b>Monday-Thursday:</b> 2:00 PM - 2:00 AM
+                    <b>Monday-Thursday:</b> 7:00 PM - 5:00 AM
                   </p>
                   <p>
-                    <b>Friday:</b> 2:00 PM - 4:00 AM
+                    <b>Friday:</b> 7:00 PM - 6:00 AM
                   </p>
                   <p>
-                    <b>Saturday:</b> 1:00 PM - 4:00 AM
+                    <b>Saturday:</b> 7:00 PM - 6:00 AM
                   </p>
                   <p>
-                    <b>Sunday:</b> 1:00 PM - 2:00 AM
+                    <b>Sunday:</b> 7:00 PM - 6:00 AM
                   </p>
                 </div>
               </div>
