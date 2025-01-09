@@ -1,30 +1,46 @@
 import React, { useEffect } from "react";
-import "./App.css";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Menu from "./components/Menu";
-import Access from "./components/Access";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import Menu from "./components/Menu/Menu";
+import Access from "./components/Access/Access";
+import Footer from "./components/Footer/Footer";
 import { initializeScripts } from "./assets/js/main";
-import Footer from "./components/Footer";
-function App() {
-	useEffect(() => {
-		initializeScripts();
+import Slider from "./components/Slider/Slider";
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom"; // Import routing components
 
-		return () => {
-			// Cleanup event listeners
-		};
-	}, []);
-	return (
-		<>
-			<Header />
-			<Hero />
-			<Menu />
-			<Access />
-			<Footer />
-			<div id="preloader"></div>
-			{/* Preloader */}
-		</>
-	);
+function App() {
+  useEffect(() => {
+    initializeScripts();
+
+    return () => {
+      // Cleanup event listeners
+    };
+  }, []);
+
+  return (
+      <>
+          <BrowserRouter>
+              <Header/>
+              <Routes> {/* Define routes */}
+                  <Route path="" element={<Page/>}/>
+                  <Route path="/menu" element={<Menu/>}/> {/* Route for Menu page */}
+              </Routes>
+
+              {/* Preloader */}
+          </BrowserRouter>
+          <div id="preloader"></div>
+      </>
+  );
+}
+
+function Page() {
+    return (<>
+        <Hero/>
+        <Slider />
+        <Access />
+        <Footer />
+    </>)
 }
 
 export default App;

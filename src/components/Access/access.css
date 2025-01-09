@@ -1,0 +1,65 @@
+.contact {
+  background-color: #0f0f0f;
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--accent-color), transparent 90%);
+}
+
+.section-title {
+  text-align: center;
+}
+
+.map-container {
+  padding-top: 10px;
+}
+
+.map-iframe {
+  border: 0;
+  width: 100%;
+  height: 500px;
+  filter: grayscale(100%) invert(92%) contrast(83%);
+}
+
+.contact-link {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.open-hours-title {
+  font-weight: 700;
+}
+
+.contact .info-item + .info-item {
+  margin-top: 40px;
+}
+
+.contact .info-item i {
+  color: var(--contrast-color);
+  background: #e7e7e7a1;
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+.contact .info-item h3 {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.contact .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}

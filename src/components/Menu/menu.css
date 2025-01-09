@@ -1,0 +1,71 @@
+.menu {
+  background-color: #0f0f0f;
+}
+
+.menu .menu-filters {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+
+.menu .menu-filters li {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s, filter 0.3s;
+}
+
+.menu .menu-filters li:hover,
+.menu .menu-filters .filter-active {
+  color: var(--accent-color);
+  filter: invert(59%) sepia(69%) saturate(407%) hue-rotate(6deg)
+    brightness(120%) contrast(87%);
+}
+
+.menu .menu-filter-icon {
+  height: 60px;
+}
+
+.menu .menu-item {
+  margin-top: 50px;
+}
+
+.menu .menu-content {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0;
+  position: relative;
+}
+
+.menu .menu-content::after {
+  content: "......................................................................"
+    "....................................................................";
+  position: absolute;
+  left: 20px;
+  right: 0;
+  top: -4px;
+  z-index: 1;
+  color: color-mix(in srgb, var(--default-color), transparent 60%);
+}
+
+.menu .menu-content span {
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+.menu .menu-ingredients {
+  font-style: italic;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+}
+
+.menu .menu-img {
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 3px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
