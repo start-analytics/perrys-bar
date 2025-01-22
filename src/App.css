@@ -182,3 +182,18 @@ section,
 	font-weight: 600;
 	font-family: var(--heading-font);
 }
+
+.neon-title {
+	font-size: 2.5rem;
+	color: rgb(255, 255, 255); /* Set the core text color */
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	text-shadow: 0 0 2px rgb(255, 255, 255), /* Smaller inner glow */ 0 0 2px rgb(255, 255, 255); /* Outer contained glow */
+	letter-spacing: 5px;
+}
+
+@media (max-width: 768px) {
+	.neon-title {
+		font-size: 1.5rem;
+	}
+}
