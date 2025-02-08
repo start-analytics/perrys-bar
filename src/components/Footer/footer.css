@@ -5,6 +5,9 @@
 	padding-bottom: 50px;
 	position: relative;
 }
+.sitename {
+	font-size: 20px;
+}
 
 .footer .footer-top {
 	padding-top: 50px;

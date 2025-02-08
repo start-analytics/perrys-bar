@@ -1,0 +1,48 @@
+/* WhiskyMenu.module.css */
+.darkMode {
+	color: #ffffff;
+}
+
+.imageContainer {
+	width: 60px; /* Fixed width for the image container */
+	overflow: hidden; /* Ensure the image doesn't overflow */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0; /* Prevent the image container from shrinking */
+}
+
+.responsiveImage {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Ensure the image covers the container without stretching */
+}
+
+.cardTitle {
+	text-align: center;
+}
+
+.cardText {
+	color: #ddd !important;
+	font-size: 20px;
+}
+.menuContainer {
+	background: linear-gradient(to bottom, #222222, rgb(15, 15, 15));
+	border-radius: 20px;
+	padding: 15px 15px;
+	transition: transform 0.3s ease, background-color 0.3s ease;
+	color: white;
+	border: 0;
+}
+
+.menuContainer:hover {
+	transform: translateY(-5px); /* Slight lift effect */
+	background-color: #1e1e1e; /* Slightly lighter background on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.imageContainer {
+		width: 60px; /* Adjust width for smaller screens */
+	}
+}

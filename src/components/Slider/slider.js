@@ -9,34 +9,34 @@ import "./slider.css";
 
 const slides = [
 	{
-		title: "Bar & Lounge",
+		title: "Hip-Hop Night",
 		subtitle: "Lorem Ipsum",
-		description: "Welcome to the Tokyo Bar",
-		image: "/img/img1.jpg",
-	},
-	{
-		title: "Cafe & Restaurant",
-		subtitle: "Lorem Ipsum",
-		description: "A piece of heaven",
-		image: "/img/img2.jpg",
-	},
-	{
-		title: "Shisha Lounge",
-		subtitle: "Lorem Ipsum",
-		description: "Try our best shisha",
-		image: "/img/img3.jpg",
-	},
-	{
-		title: "Cigars & Whiskey",
-		subtitle: "Lorem Ipsum",
-		description: "Finest selection",
-		image: "/img/img4.jpg",
-	},
-	{
-		title: "Karaoke & Events",
-		subtitle: "Lorem Ipsum",
-		description: "Join us every weekend",
 		image: "/img/img5.jpg",
+		href: "https://www.meetup.com/shibuya-hip-hop-night",
+	},
+	{
+		title: "Foreigner weekend party",
+		subtitle: "Lorem Ipsum",
+		image: "/img/foreigners.png",
+		href: "https://www.meetup.com/tokyo-foreigners-weekend-party",
+	},
+	{
+		title: "Rent our venue",
+		subtitle: "Lorem Ipsum",
+		image: "/img/img3.jpg",
+		href: "https://www.startanalytics.net/#contact",
+	},
+	{
+		title: "EDM Night",
+		subtitle: "Lorem Ipsum",
+		image: "/img/foreigners.jpeg",
+		href: "https://www.meetup.com/tokyo-edm-meetup-group/",
+	},
+	{
+		title: "Drinks with Founders",
+		subtitle: "Lorem Ipsum",
+		image: "/img/bg4.png",
+		href: "https://lu.ma/calendar/cal-HvPiBQWizhN6qzx",
 	},
 ];
 
@@ -82,11 +82,13 @@ export default function Slider() {
 			>
 				{slides.map((slide, index) => (
 					<SwiperSlide key={index}>
-						<div style={{ position: "relative", textAlign: "center" }}>
+						<a target="_blank" href={slide.href} style={{ position: "relative", textAlign: "center" }}>
 							<img src={slide.image} alt={slide.title} style={{ maxWidth: "100%", borderRadius: "10px" }} />
 
-							<h4 className="slide-title neon-shadow">{slide.title}</h4>
-						</div>
+							<h4 className="slide-title neon-shadow" style={{ background: "#00000080" }}>
+								{slide.title}
+							</h4>
+						</a>
 					</SwiperSlide>
 				))}
 			</Swiper>
