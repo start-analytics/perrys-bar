@@ -17,7 +17,6 @@ const Cocktails = () => {
 			<Header navItems={navItems} />
 			<HeroMenu title="Cocktails & Mixed Drinks" img="/img/menu/cocktail-bg.jpg" />
 			<SpecialShotsMenu />
-			<BucketsMenu />
 			<CocktailsMenu />
 			<Footer />
 		</>
