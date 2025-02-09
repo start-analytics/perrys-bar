@@ -5,7 +5,11 @@ const Access = () => {
 		<section id="access" className="contact section">
 			{/* Section Title */}
 			<div className="section-title pb-0 mb-5 mt-2">
-				<div className="d-flex align-items-center justify-content-center neon-title">Access</div>
+				<div className="heading-container container">
+					<div className="heading-line"></div>
+					<div className="d-flex align-items-center justify-content-center neon-title">Access</div>
+					<div className="heading-line"></div>
+				</div>
 			</div>
 			{/* End Section Title */}
 			<div className="map-container mb-5 pt-2 container">

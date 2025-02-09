@@ -3,9 +3,7 @@ import "./hero.css";
 const Hero = () => {
 	return (
 		<section id="home" className="hero section dark-background">
-			<video autoPlay loop muted className="hero-video">
-				<source src="/img/smoke.mp4" type="video/mp4" />
-			</video>
+			<video src="/img/smoke.mp4" autoPlay playsInline loop muted className="hero-video"></video>
 
 			<div className="container">
 				<div className="row">

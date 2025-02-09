@@ -17,7 +17,11 @@ export default function Home() {
 			<Hero />
 
 			<div id="menu" className="section-title pb-3 pt-3 mb-5 mt-5 container">
-				<div className="d-flex align-items-center justify-content-center neon-title">Menu</div>
+				<div className="heading-container container">
+					<div className="heading-line"></div>
+					<div className="d-flex align-items-center justify-content-center neon-title">Menu</div>
+					<div className="heading-line"></div>
+				</div>
 				<div>
 					<InteractiveCards
 						cards={[

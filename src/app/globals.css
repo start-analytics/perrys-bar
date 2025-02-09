@@ -243,3 +243,20 @@ section,
 		opacity: 1;
 	}
 }
+
+.heading-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px; /* Space between text and lines */
+}
+
+.heading-line {
+	width: 150px; /* Fixed width */
+	height: 2px;
+	background-color: white;
+}
+
+.heading-title {
+	white-space: nowrap; /* Prevents title from wrapping */
+}

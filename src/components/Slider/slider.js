@@ -44,7 +44,11 @@ export default function Slider() {
 	return (
 		<div className="mt-4" id="discover">
 			<div className="section-title pb-3 pt-3 mb-5 mt-5">
-				<div className="d-flex align-items-center justify-content-center neon-title">Discover</div>
+				<div className="heading-container container">
+					<div className="heading-line"></div>
+					<div className="d-flex align-items-center justify-content-center neon-title">Discover</div>
+					<div className="heading-line"></div>
+				</div>{" "}
 			</div>
 			<Swiper
 				className="sample-slider"

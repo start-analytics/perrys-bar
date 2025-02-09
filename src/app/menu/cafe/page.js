@@ -5,10 +5,10 @@ import MenuItemCard from "@/components/MenuItemCard/menuItemCard";
 const drinkItems = [
 	{
 		items: [
-			{ name: "アメリカン", details: "Americano", price: "¥500" },
-			{ name: "カフェラテ", details: "Caffe Latte", price: "¥350" },
-			{ name: "東京ラテ", details: "Tokyo Latte", price: "¥400" },
-			{ name: "カフェモカ", details: "Cafe mocha", price: "¥450" },
+			{ name: "アメリカン", details: "Americano", price: "¥600" },
+			{ name: "カフェラテ", details: "Caffe Latte", price: "¥600" },
+			{ name: "東京ラテ", details: "Tokyo Latte", price: "¥600" },
+			{ name: "カフェモカ", details: "Cafe mocha", price: "¥600" },
 		],
 	},
 ];
