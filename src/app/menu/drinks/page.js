@@ -26,7 +26,7 @@ export default function Menu() {
 						<div key={category.slug} className="col-12 col-sm-6 col-md-4 mb-4">
 							<a href={`/menu/drinks/${category.slug}`} className={styles.cardLink}>
 								<div style={{ minHeight: "300px" }} className={`${styles.card} h-100 position-relative overflow-hidden rounded shadow-lg text-center bg-secondary text-white`}>
-									<img src={category.image} alt={category.name} className="w-100 h-100 object-fit-cover opacity-50" />
+									<img src={category.image} alt={category.name} className="w-100 h-100 object-fit-cover opacity-60" />
 									<div className="position-absolute top-50 start-50 translate-middle w-100 text-white fw-bold fs-4">{category.name}</div>
 								</div>
 							</a>

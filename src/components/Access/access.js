@@ -38,7 +38,7 @@ const Access = () => {
 											</a>
 										</div>
 									</div>
-									<div className="info-item d-flex  mt-4 mb-4" style={{ marginLeft: "20px" }}>
+									<div className="info-item d-flex  mt-4 mb-4">
 										<i className="bi bi-envelope flex-shrink-0" />
 										<div>
 											<h3>Email Us</h3>
