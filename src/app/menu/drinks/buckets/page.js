@@ -12,7 +12,7 @@ const Buckets = () => {
 	return (
 		<>
 			<Header navItems={navItems} />
-			<HeroMenu title="Buckets" img="/img/menu/cocktail-bg.jpg" />
+			<HeroMenu title="Buckets" img="/img/menu/buckets_bg.jpg" />
 			<BucketsMenu />
 			<Footer />
 		</>

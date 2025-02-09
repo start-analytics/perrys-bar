@@ -25,16 +25,19 @@ export default function Home() {
 								title: "Drinks",
 								image: "/img/img4.jpg",
 								icon: "/img/drinks.png",
+								href: "/menu/drinks",
 							},
 							{
 								title: "Food",
 								image: "/img/bg2.jpg",
 								icon: "/img/food.png",
+								href: "/menu/foods",
 							},
 							{
-								title: "Shisha",
+								title: "Cafe",
 								image: "/img/img3.jpg",
-								icon: "/img/shisha.png",
+								icon: "/img/cafe.png",
+								href: "/menu/cafe",
 							},
 						]}
 					/>

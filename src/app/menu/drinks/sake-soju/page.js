@@ -14,7 +14,7 @@ const SakeSoju = () => {
 	return (
 		<>
 			<Header navItems={navItems} />
-			<HeroMenu title="Sake & Soju" img="/img/menu/cocktail-bg.jpg" />
+			<HeroMenu title="Sake & Soju" img="/img/menu/sake_bg.jpg" />
 			<SakeMenu />
 			<SojuMenu />
 

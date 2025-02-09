@@ -51,10 +51,10 @@ const InteractiveCards = ({ cards }) => {
 	};
 
 	return (
-		<a className="container mt-4" href="/menu/drinks">
+		<div className="container mt-4">
 			<div className="row justify-content-center">
 				{cards.map((card, index) => (
-					<div key={index} className="col-md-4 col-sm-12 mb-4 d-flex justify-content-center">
+					<a key={index} href={card.href} className="col-md-4 col-sm-12 mb-4 d-flex justify-content-center">
 						<div ref={(el) => (frames.current[index] = el)} className={styles.frame} onMouseMove={(e) => mouseMove(e, index)} onMouseLeave={() => mouseLeave(index)}>
 							<div ref={(el) => (cardsRef.current[index] = el)} className={`${styles.card}`} style={{ backgroundImage: `url(${card.image})` }}>
 								<div ref={(el) => (lights.current[index] = el)} className={styles.light}></div>
@@ -64,10 +64,10 @@ const InteractiveCards = ({ cards }) => {
 								</div>
 							</div>
 						</div>
-					</div>
+					</a>
 				))}
 			</div>
-		</a>
+		</div>
 	);
 };
 

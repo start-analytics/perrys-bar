@@ -5,8 +5,8 @@ const MenuItemCard = ({ item }) => {
 		<div className="col-md-4 mb-3">
 			<div className={`${styles.menuContainer} card h-100`}>
 				<div className="card-body">
-					<div className="d-flex align-items-end">
-						{item.img && <img style={{ height: "140px", width: "90px" }} className="img-fluid px-3" src={item.img} alt={item.name} />}
+					<div className="d-flex align-items-center h-100">
+						{item.img && <img style={{ height: "140px", width: item.width ? `${item.width}px` : "90px" }} className="img-fluid px-3" src={item.img} alt={item.name} />}
 						<div className="w-100">
 							<h5>{item.name}</h5>
 							{item.details && <p className={styles.cardText}>{item.details}</p>}

@@ -2,8 +2,8 @@ import MenuItemCard from "@/components/MenuItemCard/menuItemCard";
 const sake = [
 	{
 		items: [
-			{ name: "特別本醸造 八海山", details: "Tokubetsu Honjozo Hakkaisan", alcohol: "15.5%", volume: "30ml", price: "¥600" },
-			{ name: "九頭龍", details: "Kuzuryu", alcohol: "16%", volume: "30ml", price: "¥600" },
+			{ name: "特別本醸造 八海山", img: "/img/menu/tokubetsu_honjozo_hakkaisan.png", details: "Tokubetsu Honjozo Hakkaisan", alcohol: "15.5%", volume: "30ml", price: "¥600" },
+			{ name: "九頭龍", img: "/img/menu/kuzuryu_junmai_kobetsu.png", details: "Kuzuryu", alcohol: "16%", volume: "30ml", price: "¥600" },
 		],
 	},
 ];

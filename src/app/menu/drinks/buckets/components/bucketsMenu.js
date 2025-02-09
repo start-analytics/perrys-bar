@@ -3,10 +3,10 @@ import MenuItemCard from "@/components/MenuItemCard/menuItemCard";
 const buckets = [
 	{
 		items: [
-			{ name: "WHISKY COLA BUCKET", details: "ウイスキーコーク", volume: "1L", price: "¥980" },
-			{ name: "RUM COLA BUCKET", details: "ラムコーク", volume: "1L", price: "¥980" },
-			{ name: "GIN TONIC BUCKET", details: "ジントニックバケット", volume: "1L", price: "¥980" },
-			{ name: "VODKA REDBULL BUCKET", details: "レッドブルウォッカ", volume: "1L", price: "¥980" },
+			{ name: "WHISKY COLA BUCKET", width: "110px", img: "/img/menu/bucket-gin-tonic.png", details: "ウイスキーコーク", volume: "1L", price: "¥980" },
+			{ name: "RUM COLA BUCKET", width: "110px", img: "/img/menu/bucket-rum-coke.png", details: "ラムコーク", volume: "1L", price: "¥980" },
+			{ name: "GIN TONIC BUCKET", width: "110px", img: "/img/menu/bucket-gin-tonic.png", details: "ジントニックバケット", volume: "1L", price: "¥980" },
+			{ name: "VODKA REDBULL BUCKET", width: "110px", img: "/img/menu/bucket-vodka-redbull.png", details: "レッドブルウォッカ", volume: "1L", price: "¥980" },
 		],
 	},
 ];
